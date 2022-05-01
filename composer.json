@@ -1,0 +1,33 @@
+{
+    "name": "ablaise/meteion-bundle",
+    "type": "symfony-bundle",
+    "description": "MeteionBundle is the Symfony integration of the Meteion library.",
+    "homepage": "https://github.com/ablaise/meteion-bundle",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Alexis BLAISE",
+            "email": "blaise.alexis@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "ablaise/meteion": "^0.0.1-beta",
+        "symfony/framework-bundle": "^5.4"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.8"
+    },
+    "scripts": {
+        "php-cs-fixer": "php-cs-fixer fix . --verbose --rules=@Symfony"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "MeteionBundle\\": ""
+        }
+    }
+}

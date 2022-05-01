@@ -1,0 +1,48 @@
+<?php
+
+namespace MeteionBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AnimaWeapon5spiritTalkType.
+ *
+ * @ORM\Table(name="anima_weapon5spirit_talk_type")
+ * @ORM\Entity
+ */
+class AnimaWeapon5spiritTalkType
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="pk", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="anima_weapon5spirit_talk_type_pk_seq", allocationSize=1, initialValue=1)
+     */
+    private $pk;
+
+    /**
+     * @var int|null
+     *
+     * @ORM\Column(name="column_1", type="integer", nullable=true)
+     */
+    private $column1;
+
+    public function getPk(): ?int
+    {
+        return $this->pk;
+    }
+
+    public function getColumn1(): ?int
+    {
+        return $this->column1;
+    }
+
+    public function setColumn1(?int $column1): self
+    {
+        $this->column1 = $column1;
+
+        return $this;
+    }
+}

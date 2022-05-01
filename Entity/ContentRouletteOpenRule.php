@@ -1,0 +1,67 @@
+<?php
+
+namespace MeteionBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ContentRouletteOpenRule.
+ *
+ * @ORM\Table(name="content_roulette_open_rule")
+ * @ORM\Entity
+ */
+class ContentRouletteOpenRule
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="pk", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="content_roulette_open_rule_pk_seq", allocationSize=1, initialValue=1)
+     */
+    private $pk;
+
+    /**
+     * @var bool|null
+     *
+     * @ORM\Column(name="column_1", type="boolean", nullable=true)
+     */
+    private $column1;
+
+    /**
+     * @var int|null
+     *
+     * @ORM\Column(name="type", type="bigint", nullable=true)
+     */
+    private $type;
+
+    public function getPk(): ?int
+    {
+        return $this->pk;
+    }
+
+    public function getColumn1(): ?bool
+    {
+        return $this->column1;
+    }
+
+    public function setColumn1(?bool $column1): self
+    {
+        $this->column1 = $column1;
+
+        return $this;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function setType(?string $type): self
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+}
