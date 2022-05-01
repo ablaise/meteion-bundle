@@ -1,7 +1,7 @@
 MeteionBundle
 =============
 
-MeteionBundle is the Symfony integration of the [Meteion library](https://github.com/ablaise/meteion).
+MeteionBundle is a Symfony integration of the [Meteion library](https://github.com/ablaise/meteion).
 
 # Key features
 

@@ -1,7 +1,7 @@
 {
     "name": "ablaise/meteion-bundle",
     "type": "symfony-bundle",
-    "description": "MeteionBundle is the Symfony integration of the Meteion library.",
+    "description": "MeteionBundle is a Symfony integration of the Meteion library.",
     "homepage": "https://github.com/ablaise/meteion-bundle",
     "license": "MIT",
     "minimum-stability": "stable",
