@@ -53,7 +53,7 @@ Remember to allocate enough resources to your server before running the `meteion
 
 ## Meteion As A Service
 
-The `MeteionManager` class is a service that allows you to use Meteion without additional configuration using dependency injection.
+The `MeteionManager` service allows you to use Meteion without additional configuration using dependency injection.
 
 ```php
 public function meteion(MeteionManager $manager)
@@ -81,7 +81,7 @@ public function meteion(ManagerRegistry $doctrine)
 
 ## Linking subfolders metadata
 
-Entities with the suffix `Metadata` contained in the subfolders can be linked using the `referenceTable` field.
+Entities with the `Metadata` suffix contained in the subfolders can be linked using the `referenceTable` field.
 
 ```php
 use MeteionBundle\Entity\Quest;
