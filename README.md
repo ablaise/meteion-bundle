@@ -12,6 +12,14 @@ MeteionBundle is a Symfony integration of the [Meteion library](https://github.c
 
 # Installation
 
+First, you need to enable the recipes (contrib) using the following command.
+
+```
+composer config extra.symfony.allow-contrib true
+```
+
+Then add MeteionBundle using the following command.
+
 ```shell
 composer require ablaise/meteion-bundle
 ```
@@ -100,6 +108,5 @@ public function meteion(ManagerRegistry $doctrine)
 
 # What's next?
 
-* Recipes are coming
 * New entity-related services
 * Improved commands
